@@ -1,0 +1,63 @@
+USING DA file:{:0}
+Waiting for mtk device (hold bootkey and connect):  :  ok
+BootMode : BootLoader[COM14]
+ CPU:	MT6768
+   CPU Info:	707:8A00:CA00:0
+ Chip PID	Helio G70/G80/G85
+ Chip UID	Talbot
+ Chip Version:	CHIP_VER_E1
+ BRom info::SEC:{0x7}[SBC:ON:SLA:ON:DAA:ON]
+Getting device config  : 
+USING DA file:{Redmi_13_tides_moon_android_15_patch:9b4f0}
+BRom stage Re-configuration
+ BR_MEID:0x23B7A5DF6F8565F69C3DAF87C36BF8D4
+Download 1st DA-Preloader  : (3f048)
+Jump to 1st DA  : 
+Successfully received DA sync cahr
+Start setup da environment  : 
+Successfully received 2nd DA sync signal
+Download 2nd DA  : 
+Executing download agent  : 
+Authenticating 2nd DA(XIAOMI_HyperOS)  : 
+Boot 2nd Da done! Getting Ram Info
+ Sram	448.00KB
+ Dram	4.00GB
+Boot and enter 2nd DA  : 
+Boot 2nd Da done! Getting HW Info
+ Storage	eMMC
+ BOOT1	4.00MB
+ BOOT2	4.00MB
+ RPMB	16.00MB
+ GP1	00000000
+ GP2	00000000
+ GP3	00000000
+ GP4	00000000
+ USR	232.97GB
+ MLC	00000001
+ SLC	00000001
+ EOL	00000001
+ LCYCLE	00000000
+ CID	9B010059305332353600A1EA4A985B11
+ MFRID	0x9b
+ Vendor	Unknown
+ Card BGA 	BGA (Discrete embedded)
+ OEMID 	0x0
+ Product 	Y0S256
+ Revision 	0.0
+ Card SN 	0xa1ea4a98
+ MFDate 	5/2024
+ EMCP 	Unknown
+ Capacity 	0x3a3f800000:232.99GB
+ RNID	6E27EF02425154194CF49C810608F009
+ HRID	B77B4691937229EE9C56690C561F3ABA
+Switching to usb high-speed  : 
+===== wait for DA high speed port =====
+Waiting for mtk device (hold bootkey and connect):  :  ok
+BootMode : DAVcom[COM15]
+ USBSpeed	high-speed
+Read GPT  : 
+Gathering partitions info  : 
+Resetting frp block #0
+Reset frp #0 sucess
+Rebooting device  : (v5) Done
+ Time elapsed	00:min:19:sec

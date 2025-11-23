@@ -1,0 +1,64 @@
+USING DA file:{:0}
+Waiting for mtk device (hold bootkey and connect):  :  ok
+BootMode : BootLoader[COM14]
+ CPU:	MT6765
+   CPU Info:	766:8A00:CA00:0
+ Chip PID	Helio A25/G25/P22/G35/P35
+ Chip UID	cervino
+ Chip Version:	CHIP_VER_E1
+ BRom info::SEC:{0x5}[SBC:ON:SLA:OFF:DAA:ON]
+Getting device config  : 
+USING DA file:{MOTO_MT6765_DA_SWSEC_EFUSE_BORA_2216:8eb60}
+BRom stage Re-configuration
+ BR_MEID:0x1ED74953E880D13F404273EFE1AAA90C
+Download 1st DA-Preloader  : (39fa8)
+Jump to 1st DA  : 
+Successfully received DA sync cahr
+Start setup da environment  : 
+Successfully received 2nd DA sync signal
+Authenticating 2nd DA(v5)  : 
+Executing download agent  : 
+Download 2nd DA  : 
+Executing download agent  : 
+Boot 2nd Da done! Getting Ram Info
+ Sram	224.00KB
+ Dram	2.00GB
+Boot and enter 2nd DA  : 
+Boot 2nd Da done! Getting HW Info
+ Storage	eMMC
+ BOOT1	4.00MB
+ BOOT2	4.00MB
+ RPMB	16.00MB
+ GP1	00000000
+ GP2	00000000
+ GP3	00000000
+ GP4	00000000
+ USR	29.12GB
+ MLC	00000002
+ SLC	00000002
+ EOL	00000001
+ LCYCLE	00000000
+ CID	9B010059325030333200ACA4207F9947
+ MFRID	0x9b
+ Vendor	Unknown
+ Card BGA 	BGA (Discrete embedded)
+ OEMID 	0x0
+ Product 	Y2P032
+ Revision 	0.0
+ Card SN 	0xaca4207f
+ MFDate 	9/2022
+ EMCP 	Unknown
+ Capacity 	0x749400000:29.14GB
+ RNID	DC0E21A60A74CC0EFE4D64A4CB9C13DA
+ HRID	9198251E96788C147C05FF0604CFF9AA
+Switching to usb high-speed  : 
+===== wait for DA high speed port =====
+Waiting for mtk device (hold bootkey and connect):  :  ok
+BootMode : DAVcom[COM15]
+ USBSpeed	high-speed
+Read GPT  : 
+Gathering partitions info  : 
+Resetting frp block #0
+Reset frp #0 sucess
+Rebooting device  : (v5) Done
+ Time elapsed	00:min:08:sec

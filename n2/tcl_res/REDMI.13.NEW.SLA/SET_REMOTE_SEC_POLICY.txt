@@ -1,0 +1,28 @@
+
+        if (info.m_xm_hyper_exploit) {
+            send_log_normal("Authenticating 2nd DA(XIAOMI_HyperOS)  : \n");
+
+            qbyte dev_fw_info = {0};
+            if (!SendDevCtrl(MTK::GET_DEV_FW_INFO, dev_fw_info))
+                return(0);
+
+            qbyte remote_sla = qbyte::fromHex("2BB96A8F9CDC4FC3F870C4DFF7DED0C6E6CD4BCA3666CADDD4F585B3FE497941AE049DBFBCFB36267D7E0D3E6E491D5B070E6756E9C1439D637F92F41385583AF36B0A879097037BF3F1431A82E8639D695C89386034DB01D650A7D0215B7E1A3CCECE1EB3185C806B0935A0B964805C86B1AAF3C1C739EA73F9A6D8C55812270A1B550CF8BBF4A6F2C540DBCA6B965B4EA0DE1BBD3DDB19E270AD151381331D8CB761FF3127B4ABC9AF0014A45201739EEAC9C6ADFBC0A7842E13938907967ACBCDC1CCFD9B6CD99B78AE4C73AB8E0CA15E1A086020BB4C9B5B76AF891FD4BE0FA7F0655868D699C04350668226364D444BAAA1710CCADF3725BFADB0F54BA6");
+            if (!send_param(MTK::MTKRET04))
+                return(0);
+            if (!write32(MTK::DEVICE_CTRL))
+                return(0);
+            if (!readack(MTK::MTKRET00))
+                return(0);
+            if (!send_param(MTK::MTKRET04))
+                return(0);
+            if (!write32(MTK::SET_REMOTE_SEC_POLICY))
+                return(0);
+            if (!readack(MTK::MTKRET00))
+                return(0);
+            if (!send_param(remote_sla.size()))
+                return(0);
+            if (!this->write(remote_sla))
+                return(0);
+            if (!readack(MTK::MTKRET00))
+                return(0);
+        }

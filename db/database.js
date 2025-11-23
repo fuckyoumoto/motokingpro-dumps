@@ -1,0 +1,1 @@
+{"SLADAA":true,"Manual":false,"preloader":null,"auth":null,"cert":null,"da":"C:\\Users\\AsgharSo\\Desktop\\mtkclient\\mtkclient\\Loader\\MTK_DA_V6.bin"}
